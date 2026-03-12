@@ -231,7 +231,7 @@ h3 {
 }
 
 .btn-map {
-    width: auto;
+    width: auto !important;
 }
 
 .map-container iframe {
@@ -272,17 +272,12 @@ h3 {
 }
 
 @media screen and (min-width:768px) {
-
-    body {
-        font-size: 18px;
-    }
-
     .header-logo {
-        height: 120px;
+        height: 96px;
     }
 
     .header .nav-link {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .btn-main {
@@ -298,7 +293,7 @@ h3 {
 
     .hero h1 {
         font-size: 48px;
-        padding-top: 30%;
+        padding-top: 26%;
         margin-bottom: 64px;
     }
 
@@ -380,20 +375,119 @@ h3 {
     }
 }
 
-/* 
+
 @media screen and (min-width:992px) {
-    .header .header-links {
-        margin: auto;
+    .hero-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero-desktop.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
-    .header .nav-link:hover {
-        color: var(--primary-color);
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .header .btn:hover {
-        transform: scale(1.1);
+    .footer-container .btn-main {
+        margin: 0;
     }
 }
 
+@media screen and (min-width:1024px) {
+    .hero-container {
+        height: 76vh;
+    }
 
- */ 
+    .hero h1 {
+        padding-top: 10%;
+        margin-bottom: 52px;
+    }
+    
+    .hero-text {
+        margin-bottom: 52px;
+    }
+
+    .btn-main:hover,
+    .btn-default:hover {
+        transform: scale(1.1);
+        background: var(--secondary-color);
+        color: var(--bg-text-light);
+    }
+
+    .btn-default-green:hover {
+        background: var(--primary-color);
+    }
+
+    .hero-cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: -50px;
+    }
+    
+    .material-card {
+        width: 342px;
+    }
+
+    .supplier-container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .supplier-group-1 {
+        width: 64%;
+    }
+
+    .supplier-img,
+    .customer-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .customers-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .customers-group-1 {
+        width: 64%;
+    }
+
+    .sustainability-cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sustainability-card {
+        height: 280px;
+    }
+
+    .sustainability-card-top i {
+        margin: 0 10px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn-map {
+        width: 100% !important;
+    }
+
+    .map-container {
+        width: 70%;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 430px;
+    }
+
+}
