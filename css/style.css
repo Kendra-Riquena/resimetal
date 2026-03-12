@@ -103,7 +103,7 @@ section {
     font-size: 18px;
     font-weight: 400;
     color: var(--bg-text-light);
-    width: 80%;
+    width: 240px;
     height: 140px;
     text-align: center;
     padding: 24px;
@@ -271,26 +271,12 @@ h3 {
     color: var(--primary-color);
 }
 
-/* @media screen and (min-width:576px) {
-    .hero-container {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero-tablet.jpg);
-        background-position: center;
-        background-size: cover;
-        padding-top: 15%;
-    }
-
-    .hero-text {
-        margin: 16px auto 48px;
-    }
-
-    .hero-btn {
-        padding: 8px 12px;
-        font-size: 22px;
-        width: 200px;
-    }   
-}
-
 @media screen and (min-width:768px) {
+
+    body {
+        font-size: 18px;
+    }
+
     .header-logo {
         height: 120px;
     }
@@ -299,8 +285,102 @@ h3 {
         font-size: 22px;
     }
 
+    .btn-main {
+        font-size: 18px;
+    }
+
+    .hero-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 86vh;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        padding-top: 30%;
+        margin-bottom: 64px;
+    }
+
+    .hero-text {
+        font-size: 24px;
+        margin-bottom: 64px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .btn-default {
+        font-size: 24px;
+        padding: 10px 16px;
+        margin: 0;
+        transition: 0.3s;
+        width: 250px;
+    }
+
+    .hero .hero-cards-card {
+        font-size: 24px;
+        width: 300px;
+        height: 180px;
+        padding: 30px;
+    }
+
+    .hero .hero-cards .hero-icon{
+        font-size: 42px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title hr {
+        width: 100px;
+        margin-bottom: 24px;
+    }
+
+    .material-cards{
+        gap: 16px;
+    }
+
+    .material-card {
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .supplier-img,
+    .customer-img {
+        width: 70%;
+    }
+
+    .sustainability-card {
+        padding: 20px;
+        height: 300px;
+        width: 350px;
+    }
+
+    .sustainability-card-top {
+        height: 74px;
+    }
+
+    .sustainability-card-top i {
+        font-size: 48px;
+        margin: 0 24px;
+    }
+
+    .sustainability-card-top p {
+        font-size: 24px;
+    }
+
+    .footer-copyright {
+        font-size: 16px;
+    }
 }
 
+/* 
 @media screen and (min-width:992px) {
     .header .header-links {
         margin: auto;
@@ -316,4 +396,4 @@ h3 {
 }
 
 
- */
+ */ 
