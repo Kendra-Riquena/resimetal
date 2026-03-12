@@ -33,6 +33,21 @@
     padding: 8px 12px;
     text-align: center;
     margin: 0 auto;
+    transition: 0.3s;
+}
+
+@media screen and (min-width:992px) {
+    .header .header-links {
+        margin: auto;
+    }
+
+    .header .nav-link:hover {
+        color: var(--primary-color);
+    }
+
+    .header .btn:hover {
+        transform: scale(1.1);
+    }
 }
 
 
