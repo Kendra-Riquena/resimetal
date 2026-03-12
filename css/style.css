@@ -11,6 +11,12 @@
     --secondary-font: "Inter", sans-serif;
 }
 
+body {
+    font-family: var(--secondary-font);
+    background: var(--bg-text-light);
+    color: var(--bg-text-dark);
+}
+
 .header {
     background-color: var(--bg-text-dark);
 }
@@ -25,7 +31,7 @@
     color: var(--bg-text-light);
 }
 
-.header .btn {
+.btn-main {
     background: var(--secondary-color);
     font-family: var(--secondary-font);
     font-weight: 600;
@@ -34,6 +40,134 @@
     text-align: center;
     margin: 0 auto;
     transition: 0.3s;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 82vh;
+    color: var(--bg-text-light);
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: 42px;
+    padding-bottom: 16px;
+}
+
+.hero-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn-default {
+    background: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color: var(--bg-text-light);
+    padding: 8px 12px;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.3s;
+    width: 160px;
+}
+
+.btn-default-green {
+    background: var(--primary-color);
+}
+
+.hero-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.hero .hero-cards-card {
+    background: var(--emphasis);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--bg-text-light);
+    width: 80%;
+    height: 140px;
+    text-align: center;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.hero .hero-cards .hero-icon{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.section-title h2 {
+    font-family: var(--primary-font);
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.section-title hr {
+    border-top: 3px solid var(--primary-color);
+    opacity: 1;
+    width: 80px;
+    margin: 10px 0 22px;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+
+
+/* @media screen and (min-width:576px) {
+    .hero-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 15%;
+    }
+
+    .hero-text {
+        margin: 16px auto 48px;
+    }
+
+    .hero-btn {
+        padding: 8px 12px;
+        font-size: 22px;
+        width: 200px;
+    }   
+}
+
+@media screen and (min-width:768px) {
+    .header-logo {
+        height: 120px;
+    }
+
+    .header .nav-link {
+        font-size: 22px;
+    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -51,4 +185,4 @@
 }
 
 
-
+ */

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resimetal</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -18,8 +21,9 @@
                 <a class="navbar-brand" href="#">
                     <img src="img/logo-resimetal.png" alt="Logo Resimetal" class="header-logo">
                 </a>
-                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon navbar-dark"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
@@ -43,34 +47,43 @@
                             <a class="nav-link" href="#">Contato</a>
                         </li>
                     </ul>
-                    <a href="" class="btn">Entre em contato</a>
+                    <a href="" class="btn btn-main">Entre em contato</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Gestão Inteligente de Sucatas: <br>Do Fornecedor à Indústria</h1>
-            <p>Compramos e processamos metais <br>com precisão e transparência.</p>
-            <a href="">Quero vender sucata</a>
-            <a href="">Ver materiais</a>
-            <div>
-                <div>
-                    <i></i>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="container">
+                    <h1>Gestão Inteligente de Sucatas: <br>Do Fornecedor à Indústria</h1>
+                    <p class="hero-text">Compramos e processamos metais <br>com precisão e transparência.</p>
+                    <div class="hero-buttons">
+                        <a href="" class="btn-default btn" title="Nos envie uma mensagem!">Quero vender sucata</a>
+                        <a href="" class="btn-default btn btn-default-green" title="Nos envie uma mensagem!">Ver materiais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container hero-cards">
+                <div class="hero-cards-card">
+                    <i class="fa-solid fa-scale-balanced hero-icon"></i>
                     <p>Balanças Aferidas</p>
                 </div>
-                <div>
-                    <i></i>
+                <div class="hero-cards-card">
+                    <i class="fa-regular fa-truck hero-icon"></i>
                     <p>Logística Própria</p>
                 </div>
-                <div>
-                    <i></i>
+                <div class="hero-cards-card">
+                    <i class="fa-regular fa-file hero-icon"></i>
                     <p>Documentação Completa</p>
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Quem somos</h2>
+        <section class="container">
+            <div class="section-title">
+                <h2>Quem somos</h2>
+                <hr>
+            </div>
             <h3>Transformando resíduos em valor para a cadeia produtiva</h3>
             <p>Desde 1976 atuando no mercado de metais não-ferrosos, a Resimetal consolidou-se como um elo estratégico
                 na economia circular. Localizada na Zona Central da cidade de São Paulo, nossa operação é pautada pela
@@ -86,25 +99,28 @@
             <h3>O que nos move:</h3>
             <ul>
                 <li>
-                    <p><span>Transparência: </span>Garantia de pesagem justa e pagamento ágil para nossos fornecedores.
+                    <p><span class="text-bold">Transparência: </span>Garantia de pesagem justa e pagamento ágil para nossos fornecedores.
                     </p>
                 </li>
                 <li>
-                    <p><span>Capacidade Operacional: </span>Frota própria e infraestrutura preparada para movimentar
+                    <p><span class="text-bold">Capacidade Operacional: </span>Frota própria e infraestrutura preparada para movimentar
                         grandes volumes com rapidez.</p>
                 </li>
                 <li>
-                    <p><span>Responsabilidade Ambiental: </span>Gestão total de resíduos com emissão de MTR e
+                    <p><span class="text-bold">Responsabilidade Ambiental: </span>Gestão total de resíduos com emissão de MTR e
                         licenciamento completo pelos órgãos competentes.</p>
                 </li>
                 <li>
-                    <p><span>Parceria: </span>Entendemos o negócio do pequeno fornecedor e as exigências da grande
+                    <p><span class="text-bold">Parceria: </span>Entendemos o negócio do pequeno fornecedor e as exigências da grande
                         indústria, atuando para que ambos prosperem.</p>
                 </li>
             </ul>
         </section>
         <section>
-            <h2>Nossos Materiais</h2>
+            <div class="section-title">
+                <h2>Nossos Materiais</h2>
+                <hr>
+            </div>
             <p>Na Resimetal, nosso processo vai além da simples estocagem. Cada quilo de sucata recebido passa por um
                 fluxo de limpeza, descontaminação e classificação, garantindo um insumo de alta pureza para as
                 fundições.</p>
@@ -140,33 +156,36 @@
             </div>
         </section>
         <section>
-            <h2>Para Fornecedores</h2>
+            <div class="section-title">
+                <h2>Para Fornecedores</h2>
+                <hr>
+            </div>
             <div>
                 <h3>Logística e Recebimento: Como trabalhamos</h3>
                 <p>Entender nossa dinâmica operacional garante agilidade e segurança para ambas as pontas da cadeia.</p>
                 <h3>Para quem deseja Vender</h3>
                 <p>Nossa unidade está estruturada para receber materiais com rapidez e total transparência.</p>
-                <p><span>Atenção:</span> Não realizamos coletas externas. O material deve ser entregue diretamente em
+                <p><span class="text-bold">Atenção:</span> Não realizamos coletas externas. O material deve ser entregue diretamente em
                     nosso pátio.</p>
                 <ul>
                     <li>
-                        <p><span>Ponto de Entrega:</span> R. Silveira da Mota, 278 - Cambuci, São Paulo - SP, 01521-010
+                        <p><span class="text-bold">Ponto de Entrega:</span> R. Silveira da Mota, 278 - Cambuci, São Paulo - SP, 01521-010
                         </p>
                     </li>
                     <li>
-                        <p><span>Horário de Recebimento:/span> Segunda a Sexta, das 08h às 16h30.</p>
+                        <p><span class="text-bold">Horário de Recebimento:</span> Segunda a Sexta, das 08h às 16h30.</p>
                     </li>
                     <li>
-                        <p><span>Processo de Venda:</span></p>
+                        <p><span class="text-bold">Processo de Venda:</span></p>
                         <ol>
                             <li>
-                                <p><span>Triagem na Chegada: </span>Identificação e classificação do material;</p>
+                                <p><span class="text-bold">Triagem na Chegada: </span>Identificação e classificação do material;</p>
                             </li>
                             <li>
-                                <p><span>Pesagem Monitorada: </span>Uso de balanças de precisão;</p>
+                                <p><span class="text-bold">Pesagem Monitorada: </span>Uso de balanças de precisão;</p>
                             </li>
                             <li>
-                                <p><span>Pagamento Facilitado: </span>Condições competitivas e agilidade no fechamento.
+                                <p><span class="text-bold">Pagamento Facilitado: </span>Condições competitivas e agilidade no fechamento.
                                 </p>
                             </li>
                         </ol>
@@ -179,22 +198,25 @@
             <h3>Por que entregar para a Resimetal?</h3>
             <ul>
                 <li>
-                    <p><span>Valorização Real:</span> Como processamos e limpamos o material internamente, oferecemos
+                    <p><span class="text-bold">Valorização Real:</span> Como processamos e limpamos o material internamente, oferecemos
                         valores justos baseados na pureza do lote entregue.</p>
                 </li>
                 <li>
-                    <p><span>Agilidade no Pátio:</span> Estrutura dimensionada para que o fornecedor não perca tempo em
+                    <p><span class="text-bold">Agilidade no Pátio:</span> Estrutura dimensionada para que o fornecedor não perca tempo em
                         filas.</p>
                 </li>
                 <li>
-                    <p><span>Segurança Jurídica:</span> Compramos apenas materiais com procedência, garantindo uma
+                    <p><span class="text-bold">Segurança Jurídica:</span> Compramos apenas materiais com procedência, garantindo uma
                         cadeia de reciclagem ética.</p>
                 </li>
             </ul>
-            <a href="">Como Chegar</a>
+            <a href="" class="btn-default btn">Como Chegar</a>
         </section>
         <section>
-            <h2>Para Clientes</h2>
+            <div class="section-title">
+                <h2>Para Clientes</h2>
+                <hr>
+            </div>
             <div>
                 <img src="" alt="">
             </div>
@@ -219,21 +241,28 @@
             <h3>Solicite uma Cotação</h3>
             <p>Fale diretamente com nosso setor comercial para consultar volumes disponíveis, especificações técnicas e
                 prazos de entrega.</p>
-            <a href="">Solicitar Orçamento</a>
+            <a href="" class="btn-default btn">Solicitar Orçamento</a>
         </section>
         <section>
-            <h2>Sustentabilidade</h2>
+            <div class="section-title">
+                <h2>Sustentabilidade</h2>
+                <hr>
+            </div>
             <h3>Economia Circular: Nosso compromisso com o futuro.</h3>
-            <p>Transformamos o ciclo de vida dos metais, reduzindo a extração mineral e devolvendo valor à cadeia produtiva com responsabilidade ambiental.</p>
+            <p>Transformamos o ciclo de vida dos metais, reduzindo a extração mineral e devolvendo valor à cadeia
+                produtiva com responsabilidade ambiental.</p>
             <ul>
                 <li>
-                    <p><span>Economia de Energia:</span> A reciclagem do alumínio e cobre economiza até 95% da energia necessária para produzir metal primário.</p>
+                    <p><span class="text-bold">Economia de Energia:</span> A reciclagem do alumínio e cobre economiza até 95% da energia
+                        necessária para produzir metal primário.</p>
                 </li>
                 <li>
-                    <p><span>Redução de Extração:</span> Cada tonelada de metal reciclado evita a mineração de várias toneladas de minério bruto.</p>
+                    <p><span class="text-bold">Redução de Extração:</span> Cada tonelada de metal reciclado evita a mineração de várias
+                        toneladas de minério bruto.</p>
                 </li>
                 <li>
-                    <p><span>Menos Emissões:</span> O processo de reciclagem emite significativamente menos CO2 do que a mineração convencional.</p>
+                    <p><span class="text-bold">Menos Emissões:</span> O processo de reciclagem emite significativamente menos CO2 do que a
+                        mineração convencional.</p>
                 </li>
             </ul>
             <div>
@@ -243,7 +272,8 @@
                         </img>
                         <p>Gestão de Resíduos (Conformidade)</p>
                     </div>
-                    <p>Operamos sob rigoroso licenciamento ambiental. Todos os materiais recebidos são triados para garantir que nenhum resíduo contaminante seja descartado incorretamente.</p>
+                    <p>Operamos sob rigoroso licenciamento ambiental. Todos os materiais recebidos são triados para
+                        garantir que nenhum resíduo contaminante seja descartado incorretamente.</p>
                 </div>
                 <div>
                     <div>
@@ -251,7 +281,8 @@
                         </img>
                         <p>Logística Reversa</p>
                     </div>
-                    <p>Atuamos como o ponto vital da logística reversa, garantindo que o descarte de empresas menores retorne à indústria como matéria-prima pronta para uso.</p>
+                    <p>Atuamos como o ponto vital da logística reversa, garantindo que o descarte de empresas menores
+                        retorne à indústria como matéria-prima pronta para uso.</p>
                 </div>
                 <div>
                     <div>
@@ -259,27 +290,32 @@
                         </img>
                         <p>Transparência Documental</p>
                     </div>
-                    <p>Emitimos MTR (Manifesto de Transporte de Resíduos) e certificados que comprovam a destinação final ambientalmente correta do seu material.</p>
+                    <p>Emitimos MTR (Manifesto de Transporte de Resíduos) e certificados que comprovam a destinação
+                        final ambientalmente correta do seu material.</p>
                 </div>
             </div>
             <div>
                 <div>
                     <h3>Precisa de um parceiro que leve a sustentabilidade a sério?</h3>
-                    <a href="">Fale conosco</a>
+                    <a href="" class="btn-default btn">Fale conosco</a>
                 </div>
             </div>
         </section>
         <section>
-            <h2>Contato</h2>
+            <div class="section-title">
+                <h2>Contato</h2>
+                <hr>
+            </div>
             <h3>Pronto para negociar seu material?</h3>
-            <p>Seja para vender seu lote de sucata ou suprir sua indústria, nossa equipe está pronta para atender você com agilidade e transparência.</p>
+            <p>Seja para vender seu lote de sucata ou suprir sua indústria, nossa equipe está pronta para atender você
+                com agilidade e transparência.</p>
             <div>
                 <div>
                     <h3>Onde e Como</h3>
                     <p>Endereço da Unidade:</p>
-                    <p><span>Rua Silveira da Mota, nº 278 – Cambuci</span></p>
+                    <p><span class="text-bold">Rua Silveira da Mota, nº 278 – Cambuci</span></p>
                     <p>São Paulo, SP | CEP: 01521-010</p>
-                    <a href="">
+                    <a href="" class="btn-default btn">
                         <i></i>
                         Abrir no Google Maps
                     </a>
@@ -309,7 +345,7 @@
                     <li>Contato</li>
                 </ul>
             </div>
-            <a href="">Entre em contato</a>
+            <a href="" class="btn-main btn">Entre em contato</a>
         </div>
         <div>
             <p>&copy;2026, Resimetal Ltda - Todos os direitos reservados.</p>
